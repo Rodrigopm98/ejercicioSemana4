@@ -3,49 +3,32 @@ GET http://localhost:1234/usuarios
 
 ### /usuarios/:id parametro dinamico para obtener un usuario segun su id
 
-GET http://localhost:1234/usuarios/4
+GET http://localhost:1234/usuarios/2
+
 
 ### /usuarios para agregar un nuevo usuario
 
 POST http://localhost:1234/usuarios
 Content-Type: application/json
-{
-    "id": 11,
+
+    {"id": 1,
     "nombre": "Robin Hood",
     "edad": 46,
     "email": "robin@example.com",
-    "telefono": "+1 123-456-7878"
-}
+    "telefono": "+1 123-456-7878"}
+
 
 ### /usuarios/:id para modificar un usuario en especial
-PATCH http://localhost:1234/usuarios/3
+PATCH http://localhost:1234/usuarios/12
 Content-Type: application/json
-{
-    "nombre": "Emilia"
-}
+
+{"nombre": "Emilia"}
 
 
 ### /usuarios/:id para borrar un usuario en especial
-DELETE http://localhost:1234/usuarios/2
+DELETE http://localhost:1234/usuarios/1
 
 
 
-### obtener solo el precio de un producto por id
-GET http://localhost:1234/precioProducto/2
-
-
-
-### obtener solo el nombre de un producto por id
-GET http://localhost:1234/nombreProducto/3
-
-
-
-### obtener solo el numero de teléfono de un usuario por id
-GET http://localhost:1234/telefonoUsuario/2
-
-
-
-### /productos/:idusername obtener solo el nombre de un usuario que se indica por id 
-GET http://localhost:1234/nombreUsuario/2
 
 
